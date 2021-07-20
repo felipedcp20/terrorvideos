@@ -19,9 +19,6 @@ header {
     margin-left: 5px;
     margin-bottom: 3px;
 }
-.footer {
-    width: 20%;
-}
 .login {
     display: flex;
     align-items: center;
@@ -38,6 +35,9 @@ header {
     padding: 60px 68px 40px ;
     min-height: 700px ;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     }
 .login__container--form {
     display: flex;
@@ -82,7 +82,7 @@ header {
 .login__container--register a {
     text-decoration: none;
     font-size: 18;
-    font-weight: bolder; 
+    font-weight: bold; 
     color: white;   
 }
 .login__container--register a:hover {
@@ -99,9 +99,42 @@ header {
     margin-bottom: 20px;
     padding: 0px 20px;
     outline: none;
+    height: 50px;
     
 
 }
 ::placeholder {
     color: white;
+    
+}
+.button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration:underline;
+    color: grey;
 }
