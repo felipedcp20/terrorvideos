@@ -114,8 +114,13 @@ body {
 }
 .carousel {
     position: relative;
-    width: 100%;   
+    width: 100%; 
+    overflow: scroll;
+    scrollbar-width: none;  
             }
+.carousel::-webkit-scrollbar {
+    display: none;
+}
 .carousel__container {
     margin: 50px 0px;
     padding-bottom: 10px;
