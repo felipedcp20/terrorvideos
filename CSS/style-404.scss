@@ -1,0 +1,112 @@
+$blanco:white;
+
+body {
+       
+    background-color: black;
+    font-family: 'Bubblegum Sans', cursive;
+    margin: 0px;}
+    
+
+.header {
+    align-items: center;
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+         
+}   
+.header__img {
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 80px;
+}
+.header__menu {
+    margin-right: 30px;
+   }
+.header__menu--profile {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    margin-right: 8px;    
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -14px;
+    padding: 0px;
+    position: absolute;
+    text-align: right;
+    width: 100px;
+}
+.header__menu li {
+    margin: 10px 0px;
+}
+.header__menu li a {
+    color: $blanco;
+    text-decoration: none;
+}
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+
+}
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu p {
+    color: $blanco;
+    margin: 0px;
+}
+
+.footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: $blanco;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration:underline;
+    color: grey;
+}
+
+.page-not-found {
+    padding-top:150px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    animation:5s latido infinite;
+  
+     }
+
+.page-title {
+    color: $blanco;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 350px;
+    font-size: 35px;
+}
+
+@keyframes latido{
+    0%{transform:scale(1)}
+    47%{transform:scale(1)}
+    48%{transform:scale(.9)}
+    100%{transform:scale(1.1)}
+    90%{transform:scale(.9)}
+    54%{transform:scale(1)}
+}
+ 
